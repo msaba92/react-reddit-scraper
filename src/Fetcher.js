@@ -52,7 +52,7 @@ class Fetcher extends Component {
                     <tbody>
                         <tr>
                             <th>Post</th>
-                            <th>Header</th>
+                            <th>Header (External link)</th>
                             <th>Comments</th>
                         </tr>
                         {this.state.posts.map(post =>
@@ -80,7 +80,7 @@ class Fetcher extends Component {
     render() {
         return (
             <div id="mainbody">
-                <input id="choice" placeholder="Insert subreddit to fetch" value={this.state.input}
+                <input id="choice" placeholder="Insert subreddit" value={this.state.input}
                     onChange={(e) => this.updateValue(e)}
                     onKeyPress={(e) => this.handleKeyPress(e)}>
                 </input>
