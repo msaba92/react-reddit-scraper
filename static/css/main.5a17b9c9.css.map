@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,MACI,+BAAkC,CAGtC,UACI,iBAAmB","file":"static/css/main.5a17b9c9.css","sourcesContent":["td, th {\n    background-color: 1px solid black;\n}\n\n.comments {\n    text-align: center;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/styles.css"],"sourceRoot":""}
