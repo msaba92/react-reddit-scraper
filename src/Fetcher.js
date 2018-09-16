@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles.css';
 import axios from 'axios';
 
 class Fetcher extends Component {
@@ -29,6 +28,11 @@ class Fetcher extends Component {
                         this.setState({
                             success: false,
                             failure: "That subreddit does not exist!"
+                        })
+                    } else {
+                        this.setState({
+                            success: false,
+                            failure: error.message
                         })
                     }
                 })
@@ -68,6 +72,7 @@ class Fetcher extends Component {
         } else if (this.state.failure) {
             return <p>{this.state.failure}</p>
         } else {
+            return <p>{this.state.failure}</p>
         }
     }
 
